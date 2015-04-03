@@ -214,6 +214,7 @@ h1 {
 	line-height:2.5em;
 	width:16em;
 	}
+.columns {padding-top:2em;}
 .impactimage{top:1em;height:300px; width:100%; background-image:url(../images/macara.jpg); background-position:center; background-repeat:no-repeat; background-size:cover; background-color:rgba(25,22,22,1.0); margin:0;}
 .footer {height:15em; background-color:#111111;position:relative; top:65%;z-index:0; border-top:solid;
 	 border-top-color:#f5190e;
