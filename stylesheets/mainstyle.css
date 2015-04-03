@@ -1,3 +1,49 @@
+/* reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -12,9 +58,11 @@
     font-style: normal;
 
 }
+html {height:100%;}
 
 body {
   /*padding: 20px 50px 150px;*/
+  height: 100%;
   font-size: 1em;
   font-weight:100;
   text-align: relative;
@@ -23,6 +71,7 @@ body {
   height:100%;
   margin-left:0;
   margin-right:0;
+  margin-bottom:0;
   }
   .container {position:relative; height:100%;}
   .columns {-webkit-column-count: 2; /* Chrome, Safari, Opera */
@@ -145,16 +194,14 @@ body {
  right:auto;
  left:auto;
  background-color:rgba(255,255,255,0.97);
- width:100%; border-bottom-style:solid; border-bottom-color:rgba(163,163,163,0.5); border-bottom-width:1px;}
+ width:100%; border-bottom-style:solid; border-bottom-color:rgba(163,163,163,0.5); border-bottom-width:1px; z-index:200;}
  .content {
 	 margin-top:0px;
 	 padding-left:2em;
 	 padding-right:2em;
 	 padding-top:0px;
 	 padding-bottom:2em;
-	 border-bottom:solid;
-	 border-bottom-color:#f5190e;
-	 border-bottom-width: 5px;
+	 line-height:1.5;
 	 }
 	 
 h1 {
@@ -168,7 +215,9 @@ h1 {
 	width:16em;
 	}
 .impactimage{top:1em;height:300px; width:100%; background-image:url(../images/macara.jpg); background-position:center; background-repeat:no-repeat; background-size:cover; background-color:rgba(25,22,22,1.0); margin:0;}
-.footer {height:15em; background-color:#111111;position:relative; top:65%;}
+.footer {height:15em; background-color:#111111;position:relative; top:65%;z-index:0; border-top:solid;
+	 border-top-color:#f5190e;
+	 border-top-width: 5px;}
 .copyright-wrapper{background: #222222; border-top: 1px solid #333333; font-size:1em; position:absolute; bottom:0px; height: 3em; width:100%; 
 ::-moz-selection {background:#000000; color: #FFFFFF;} ::selection { background: #000000; color: #FFFFFF;}
 .copyright{position:absolute; bottom:1em;}
